@@ -19,4 +19,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
         b_0 = tuple_b[0]
         b_1 = tuple_b[1]
     return (a_0 + b_0, a_1 + b_1)
-
