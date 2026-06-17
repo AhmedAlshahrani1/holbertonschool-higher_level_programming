@@ -6,14 +6,3 @@ def search_replace(my_list, search, replace):
             num = replace
         new_list.append(num)
     return new_list
-
-   
-    """
-    new_list = []
-    for item in my_list:
-        if item == search:
-            new_list.append(replace)
-        else:
-            new_list.append(item)
-    return new_list
-    """
