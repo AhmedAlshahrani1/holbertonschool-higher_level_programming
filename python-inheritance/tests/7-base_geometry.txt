@@ -36,8 +36,38 @@ Traceback (most recent call last):
     ...
 TypeError: height must be an integer
 
-Test integer_validator with boolean (boolean is subclass of int, should fail):
+Test integer_validator with boolean:
 >>> bg.integer_validator("is_valid", True)
 Traceback (most recent call last):
     ...
 TypeError: is_valid must be an integer
+
+Test missing argument:
+>>> bg.integer_validator("age")
+Traceback (most recent call last):
+    ...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Test tuple as value:
+>>> bg.integer_validator("age", (4,))
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+
+Test list as value:
+>>> bg.integer_validator("age", [3])
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+
+Test set as value:
+>>> bg.integer_validator("age", {3, 4})
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+
+Test None as value:
+>>> bg.integer_validator("age", None)
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
