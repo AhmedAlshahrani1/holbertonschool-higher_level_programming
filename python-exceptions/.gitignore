@@ -1,0 +1,5 @@
+main.py
+*_test.py
+test_*
+__pycache__/
+*.pyc
