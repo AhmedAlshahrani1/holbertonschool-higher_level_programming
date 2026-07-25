@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Displays all states matching the name given as argument, from hbtn_0e_0_usa."""
+"""Displays all states matching the name passed as argument."""
 import MySQLdb
 import sys
 
